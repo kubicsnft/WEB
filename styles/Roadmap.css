@@ -1,0 +1,167 @@
+/* MacBook Pro 16" - 1 */
+
+.wrapper{
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    
+  
+  }
+  
+  
+  /* logo_primary 2 */
+  
+  .logoP{
+      display: flex;
+      width: 90px;
+      height: 90px;
+      background: url(../public/logos/logo_primary.png);
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      background-size: contain;
+    }
+    
+  
+  /* Line 1 */
+  
+  .line1{
+      width: 4px;
+      height: 100%;
+      background-color: #7B94B1;
+  }
+  
+  
+  /* Group 1 */
+  
+  .group{
+    position: relative;
+    width: 100%;
+    min-height:280px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  
+  /* LineH */
+  
+  .LineH{
+      position: relative;
+      width: 100%;
+      border-top:2px solid #7B94B1;
+      border-color: #7B94B1;
+      margin-top: 44px;
+    }
+  
+  
+  /* Rectangle 1 */
+  
+  .rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: start;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(169, 167, 167, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+  }
+  
+  .rectangle2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(169, 167, 167, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+  }
+  /* PHASE I */
+  
+  .phase{
+  font-family:'may';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  color: #7B94B1;}
+  
+  
+  
+  /* .▪ Social Networks Setup */
+  
+  .text{
+    
+    
+    font-family:'min';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  
+    color: #7B94B1;
+  }
+  .group2{
+    display: none;
+  }
+  
+  @media (max-width: 1000px) {
+    .logoP{
+      width: 30px;
+      height: 30px;
+    }
+  
+    .LineH{ 
+      margin-top: 17px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+  
+    .left{
+      display: none;
+    }
+  
+    .right{
+      width: 90%;
+    }
+  
+    .group{
+      min-height:100px;
+    }
+  
+    .group2{
+      position: relative;
+      width: 80%;
+      min-height:200px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .vacio{
+      display: none;
+    }
+    
+  
+  }

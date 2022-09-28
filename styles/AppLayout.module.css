@@ -1,0 +1,31 @@
+.container{
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    justify-content: center;
+    
+}
+
+
+.main{
+    max-width: 1650px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* background-color: rgb(146, 19, 19); */
+    /* z-index: 1; */
+    
+    
+}
+
+.footer{
+    text-align: center;
+    height: 100vh;
+    padding: 30px;
+    background-color:#7B94b1;
+    color:rgb(253, 253, 253);
+    width: 100%;
+    z-index:2;
+    /* max-width: 1536px; */
+}

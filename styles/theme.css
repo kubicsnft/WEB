@@ -1,0 +1,33 @@
+
+
+
+
+.bg-primary{
+    background-color: #7B94b1;
+}
+.bg-secondary{
+    background-color: #E1B649;
+}
+.bg-tertiary{
+    background-color: #EFEDA5;
+}
+
+.text-primary{
+    color: #7094b1;
+}
+.text-secondary{
+    color: #E1B649;
+}
+.text-tertiary{
+    color: #EFEDA5;
+}
+
+.border-primary{
+    border-color: #7094b1;
+}
+.border-secondary{
+    border-color: #E1B649;
+}
+.border-tertiary{
+    border-color: #EFEDA5;
+}

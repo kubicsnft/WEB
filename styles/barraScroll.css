@@ -1,0 +1,60 @@
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.barra-scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+    
+    /* border: 1px solid blue; */
+    /* border:2px solid #7B94b1; */
+    
+   
+    
+   
+}
+
+.barra-scroll::-webkit-scrollbar:vertical {
+    width:15px;
+    
+}
+
+.barra-scroll::-webkit-scrollbar-button:increment,.barra-scroll::-webkit-scrollbar-button {
+    display: none;
+    
+} 
+
+.barra-scroll::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.barra-scroll::-webkit-scrollbar-thumb {
+    background-color: #E1B649;
+    border-radius: 5px;
+    border: 2px solid #7B94b1;
+    /* border-right: 2px solid #7B94b1; */
+    
+    
+}
+
+.barra-scroll::-webkit-scrollbar-track {
+    border-radius: 5px;
+    width: 1px;
+    background-color: #ffffff;
+    border: 2px solid #7B94b1;
+    
+    
+    
+}
+
+.barra-scroll::-webkit-scrollbar-track-piece {
+    padding: 20px;
+    height: 30px;
+    
+    
+}
+
+.barra-scroll::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+
+
