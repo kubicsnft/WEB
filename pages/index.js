@@ -13,7 +13,7 @@ import CookieConsent from "react-cookie-consent";
 
 
 
-// Importación dinamica de carrusel3d
+//   Importación dinamica de carrusel3d.
 const CarruselPro = dynamic(() => import('../components/carrusel3d/carruselPro'), { ssr: false })
 const Carrusel1 = dynamic(() => import('../components/carrusel3d/carousel'), { ssr: false })
 
