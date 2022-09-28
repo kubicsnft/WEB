@@ -149,7 +149,7 @@ export default function Whitelist() {
     <div className="flex">
       {hasMetamask ? (
         isConnected ? ("") : (
-          <div className="flex flex-col bg-[#ffffff8a] items-center justify-center p-5 rounded-lg shadow-xl sm:w-[30rem] ">
+          <div className="flex flex-col bg-[#ffffff8a] text-center items-center justify-center p-5 rounded-lg shadow-xl sm:w-[30rem] ">
             <div className="mb-4">
               <FormattedMessage
                 id='wl.metamask'
