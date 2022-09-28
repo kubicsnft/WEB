@@ -5,6 +5,7 @@ import Image from "next/image";
 import Cube3d from "../cube3d";
 import Link from "next/link";
 import { config } from "react-spring";
+import { FormattedMessage } from "react-intl";
 
 
 
@@ -14,11 +15,11 @@ export default function Carrusel1() {
 
     const [desplegar, setDesplegar] = useState({
         desplegar: 'hidden',
-        mas: 'inline cursor-pointer text-tertiary'
+        mas: 'inline cursor-pointer text-secondary'
     });
 
     const changueText = () => {
-        (desplegar.mas === 'inline cursor-pointer text-tertiary')
+        (desplegar.mas === 'inline cursor-pointer text-secondary')
             ?
             setDesplegar({
                 desplegar: 'block ',
@@ -27,79 +28,13 @@ export default function Carrusel1() {
             :
             setDesplegar({
                 desplegar: 'hidden',
-                mas: 'inline cursor-pointer text-tertiary'
+                mas: 'inline cursor-pointer text-secondary'
             })
     }
 
 
     // Components
-    // const Slid = (
-    //     <Slider>
-    //         <div id="slider" className="flex items-start justify-center w-full h-full gap-6 p-8 transition duration-700 ease-out ">
-    //             <Slide index={0}>
 
-    //                 <div className="p-6 bg-white ">
-    //                     {/* <Link href='/dragonKeeper'> */}
-    //                         <Image
-    //                             className="flex transition duration-300 ease-in-out cursor-pointer hover:-translate-y-2 hover:scale-105"
-    //                             src='/cubos/Cubo_DK.png'
-    //                             alt='dragon Keeper'
-    //                             width={270}
-    //                             height={250} />
-    //                     {/* </Link> */}
-    //                     <h3 className="tracking-widest text-center xl:text-xl text-secondary may">DRAGONKEEPER</h3>
-    //                     <div className='w-full p-2 text-justify text-white rounded-lg bg-primary '>
-    //                         Dragonkeeper es la primera película de animación coproducida entre España y China, con el apoyo español de Antena 3 y Telefónica, distribuida en España por Contacorriente, una de las mayores distribuidoras del país.
-    //                     </div>
-    //                 </div>
-
-
-    //             </Slide>
-    //             <Slide index={1}>
-
-    //                 <div className="p-6 bg-white ">
-    //                     {/* <Link href=''> */}
-    //                     <Image
-    //                         className="flex transition duration-300 ease-in-out cursor-pointer hover:-translate-y-2 hover:scale-105"
-    //                         src='/cubos/Cubo_FUT.png'
-    //                         alt='dragon Keeper'
-    //                         width={270}
-    //                         height={250} />
-    //                     {/* </Link> */}
-    //                     <h3 className="tracking-widest text-center xl:text-xl text-secondary may">EL FUTURO YA ESTA AQUÍ</h3>
-    //                     <p className='w-full p-2 text-justify text-white rounded-lg bg-primary '>
-    //                         Largometraje de imágen real dirigido por Juan Vicente Córdoba. A finales de los años 70 y principios de los 80 en Madrid algunas emisoras de radio estaban estrechamente vinculadas a la divulgación de lo que
-    //                         <span id='{desplegar}' className={desplegar.desplegar}>
-    //                         estaba fraguándose.Una peculiar explosión creativa que constituyó todo un fenómeno social que cobró su verdadera dimensión y su total plenitud en la calle.
-    //                             <div onClick={changueText} id="menos" className="cursor-pointer text-tertiary">... [leer menos]</div>
-    //                         </span>
-    //                         <p onClick={changueText} className={desplegar.mas}>... [leer más]</p>
-    //                     </p>
-    //                 </div>
-
-
-    //             </Slide>
-    //             <Slide index={2}>
-
-    //                 <div className="h-[29.4rem]  bg-white ">
-    //                     <div className="flex flex-col items-center justify-center h-full rounded-lg ">
-    //                         <Cube3d />
-    //                         <h3 className="absolute mb-16 ml-8 text-2xl tracking-widest text-center -rotate-12 text-secondary may">COMING SOON...</h3>
-    //                     </div>
-    //                 </div>
-
-    //             </Slide>
-    //             <Slide index={3}>
-    //                 <div className="h-[29.4rem]  bg-white ">
-    //                     <div className="flex flex-col items-center justify-center h-full rounded-lg ">
-    //                         <Cube3d />
-    //                         <h3 className="absolute mb-16 ml-8 text-2xl tracking-widest text-center -rotate-12 text-secondary may">COMING SOON...</h3>
-    //                     </div>
-    //                 </div>
-    //             </Slide>
-
-    //         </div>
-    //     </Slider>)
 
     const SlidMovil = (
         <Slider>
@@ -117,8 +52,10 @@ export default function Carrusel1() {
                         {/* </Link> */}
                         <h3 className="text-center text-secondary may">DRAGONKEEPER</h3>
                         <div className='w-10/12 p-2 text-sm text-justify text-white border-t rounded-lg bg-primary'>
-                            Dragonkeeper es la primera película de animación coproducida entre España y China, con el apoyo español de Antena 3 y Telefónica, distribuida en España por Contacorriente, una de las mayores distribuidoras del país.
-                        </div>
+                            <FormattedMessage
+                                id="project.dragon"
+                                default=''
+                            />                        </div>
                     </div>
 
 
@@ -134,13 +71,23 @@ export default function Carrusel1() {
                             width={230}
                             height={210} />
                         {/* </Link> */}
-                        <h3 className="text-center text-secondary may">EL FUTURO YA ESTA AQUÍ</h3>
+                        <h3 className="text-center text-secondary may">
+                            <FormattedMessage
+                                id="project.title.futuro"
+                                default=''
+                            />
+                        </h3>
                         <div className='w-10/12 p-2 text-sm text-justify text-white rounded-lg bg-primary '>
-                            Largometraje de imágen real dirigido por Juan Vicente Córdoba.
-                            A finales de los años 70 y principios de los 80 en Madrid algunas emisoras de radio estaban estrechamente vinculadas a la divulgación de lo que estaba fraguándose.
+                            <FormattedMessage
+                                id="project.futuro1"
+                                default=''
+                            />
                             <span id='{desplegar}' className={desplegar.desplegar}>
-                                Una peculiar explosión creativa que constituyó todo un fenómeno social que cobró su verdadera dimensión y su total plenitud en la calle.
-                                <div onClick={changueText} id="menos" className="cursor-pointer text-tertiary">... [leer menos]</div>
+                                <FormattedMessage
+                                    id="project.futuro2"
+                                    default=''
+                                />
+                                <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">... [leer menos]</div>
                             </span>
                             <p onClick={changueText} className={desplegar.mas}>... [leer más]</p>
                         </div>
@@ -192,7 +139,7 @@ export default function Carrusel1() {
             aria-label="slide forward"
             className="text-secondary absolute -right-2 z-30 p-1   rounded-full cursor-pointer top-[10rem] opacity-40 border-primary  hover:opacity-100 "
             id="prev">
-            <svg 
+            <svg
                 width={20}
                 height={30}
                 viewBox="0 0 8 14"

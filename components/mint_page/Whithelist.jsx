@@ -157,6 +157,7 @@ export default function Whitelist() {
               />
             </div>
             <div className="flex flex-row items-center justify-center w-full">
+              
               <button
                 className=' buttMeta'
                 type="button"
@@ -175,11 +176,8 @@ export default function Whitelist() {
                   height='30'
                   alt="metamask"
                 />
-
               </button>
-
             </div>
-            {/* </button> */}
           </div>
         )
       ) : (
