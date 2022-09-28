@@ -39,5 +39,7 @@
     "wl.connected":"Connected! Make sure you are on the ETH Chain",
     "wl.join":"JOIN OUR WHITELIST",
     "wl.already":"Already whitelisted!",
-    "wl.metamask":"Connect with Metamask to join our Whitelist!"
+    "wl.metamask":"Connect with Metamask to join our Whitelist!",
+    "readMore":"...[Read more]",
+    "readLess":"...[Read less]"
 }

@@ -87,9 +87,19 @@ export default function Carrusel1() {
                                     id="project.futuro2"
                                     default=''
                                 />
-                                <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">... [leer menos]</div>
+                                <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">
+                                    <FormattedMessage
+                                        id="readLess"
+                                        default=''
+                                    />
+                                </div>
                             </span>
-                            <p onClick={changueText} className={desplegar.mas}>... [leer más]</p>
+                            <p onClick={changueText} className={desplegar.mas}>
+                                <FormattedMessage
+                                    id="readMore"
+                                    default=''
+                                />
+                            </p>
                         </div>
                     </div>
 

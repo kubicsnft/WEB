@@ -39,7 +39,7 @@ export default function Slider(props) {
                 mas: 'inline cursor-pointer text-secondary'
             })
     }
-    
+
 
     const slides = [
         {
@@ -77,23 +77,34 @@ export default function Slider(props) {
                         height={250} />
                     {/* </Link> */}
                     <h3 className="text-xl tracking-widest text-center text-secondary">
-                    <FormattedMessage
+                        <FormattedMessage
                             id="project.title.futuro"
                             default=''
                         />
                     </h3>
                     <div className='w-full p-2 text-sm text-justify text-white rounded-lg shadow-lg shadow-gray-400 bg-primary '>
-                    <FormattedMessage
+                        <FormattedMessage
                             id="project.futuro1"
                             default=''
                         />
                         <span id='{desplegar}' className={desplegar.desplegar}>
-                        <FormattedMessage
-                            id="project.futuro2"
-                            default=''
-                        />                            <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">... [leer menos]</div>
+                            <FormattedMessage
+                                id="project.futuro2"
+                                default=''
+                            />
+                            <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">
+                                <FormattedMessage
+                                    id="readLess"
+                                    default=''
+                                />
+                            </div>
                         </span>
-                        <div onClick={changueText} className={desplegar.mas}>... [leer más]</div>
+                        <div onClick={changueText} className={desplegar.mas}>
+                            <FormattedMessage
+                                id="readMore"
+                                default=''
+                            />
+                        </div>
                     </div>
 
                 </div>
