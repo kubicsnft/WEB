@@ -4,7 +4,6 @@ import AppLayoutHead from '../components/layout/AppLayoutHead'
 import LateralMenu from '../components/lateralMenu'
 import SocialNetworks from '../components/SocialNetworks'
 import Nosotros from '../components/home/nosotros'
-import Roadmap from '../components/home/roadmap'
 import WhayIsKubics from '../components/home/whayIsKubics'
 import MenuMovil from "../components/MenuMovil";
 import { FormattedMessage } from "react-intl";
