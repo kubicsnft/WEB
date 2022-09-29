@@ -92,8 +92,8 @@ const TestRoadmap = () => {
                             <ul className=''>
                                 <div className='flex flex-row text'><span className='mr-2'>▪</span><li> First Project Definition “Dragonkeeper”.</li></div>
                                 <div className='flex flex-row text'><span className='mr-2'>▪</span><li> Website Kubics Main and Minting page.</li></div>
-                                <div className='flex flex-row text'><span className='mr-2'>▪</span><li>  Whitelisting</li></div>
-                                <div className='flex flex-row text'><span className='mr-2'>▪</span><li>  Whitepaper</li></div>
+                                <div className='flex flex-row text'><span className='mr-2'>▪</span><li> NFT development.</li></div>
+                                <div className='flex flex-row text'><span className='mr-2'>▪</span><li> Blockchain Setup.</li></div>
                             </ul>
                         </div>
                     </div>

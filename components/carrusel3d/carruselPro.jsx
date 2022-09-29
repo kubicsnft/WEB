@@ -106,9 +106,7 @@ export default function Slider(props) {
                             />
                         </div>
                     </div>
-
                 </div>
-
         },
         {
             key: uuidv4(),
@@ -133,8 +131,8 @@ export default function Slider(props) {
 
 
     return (
-        <div className="flex items-center justify-center w-11/12 h-full xl:w-full">
-            <div style={{ width: "90%", height: "100px", margin: "0 auto" }} className='flex-col items-center'>
+        <div className="flex flex-col items-center justify-start w-11/12 h-full xl:w-full ">
+            <div style={{ width: "90%", height: "450px", margin: "0 auto" }} className=''>
                 <Carousel
                     slides={slides}
                     goToSlide={state.goToSlide}
@@ -142,26 +140,24 @@ export default function Slider(props) {
                     showNavigation={state.showNavigation}
                     animationConfig={state.config}
                 />
-                <div className='z-10 flex flex-row justify-between w-full'>
-                    {/* Button left */}
-                    <div className="z-50 -mt-12 md:-ml-10 sm:-ml-4 -ml-16 text-lg bg-white sm:bg-inherit sm:text-3xl border-primary sm:border-none border rounded-full p-1 h-full transition duration-150 ease-in-out cursor-pointer  hover:scale-110 hover:opacity-100 opacity-40 text-[#E1B649]"
-                        onClick={() => {
-                            setState({ goToSlide: state.goToSlide - 1 });
-                        }}>
-                        <MdOutlineArrowBackIosNew />
-                    </div>
-                    &nbsp; &nbsp; &nbsp; &nbsp;
-                    {/* button right */}
-                    <div className="z-50 -mt-12 md:-mr-10 sm:-mr-4 -mr-16 text-lg bg-white sm:bg-inherit sm:text-3xl border-primary sm:border-none border rounded-full p-1 h-full transition duration-150 ease-in-out cursor-pointer  hover:scale-110 hover:opacity-100 opacity-40   text-[#E1B649]"
-                        onClick={() => {
-                            setState({ goToSlide: state.goToSlide + 1 });
-                        }}>
-                        <MdOutlineArrowForwardIos />
-                    </div>
+                {/* ------ buttons --------- */}
+            <div className='flex flex-row justify-center w-full text-secondary'>
+                {/* Button left */}
+                <div className="mr-10 text-3xl transition duration-300 ease-in-out cursor-pointer hover:scale-150"
+                    onClick={() => {
+                        setState({ goToSlide: state.goToSlide - 1 });
+                    }}>
+                    <MdOutlineArrowBackIosNew />
+                </div>
+                {/* button right */}
+                <div className="ml-10 text-3xl transition duration-300 ease-in-out cursor-pointer hover:scale-150"
+                    onClick={() => {
+                        setState({ goToSlide: state.goToSlide + 1 });
+                    }}>
+                    <MdOutlineArrowForwardIos />
                 </div>
             </div>
-
-
+            </div>
         </div>
     );
 }
