@@ -33,7 +33,7 @@ export default function Newsletters(props) {
             <p className="text.md md:text-xl text-center">
                 <FormattedMessage
                     id='app.text3'
-                    defaultMessage='JOIN OUR WHITELIST'
+                    defaultMessage='JOIN OUR NEWSLETTERS'
                 />
             </p>
             <div className="flex flex-col items-center justify-center w-7/12 mt-2 md:w-4/12 lg:flex-row">

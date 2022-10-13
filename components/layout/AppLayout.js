@@ -1,9 +1,7 @@
 import styles from '../../styles/AppLayout.module.css'
 import React from 'react'
 import Head from 'next/head'
-import Header from '../containers/header'
 import Footer from '../containers/footer'
-
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";

@@ -17,11 +17,11 @@ const SocialNetworks = () => {
                     <AiFillInstagram />
                 </div>
             </a>
-            {/* <a href="" > */}
+            <a href="http://discord.gg/WpYwyCgNmu">
                 <div className='text-2xl p-1 flex justify-center border border-white rounded-lg hover:shadow  hover:shadow-[#E1B649] bg-primary text-white transition  hover:scale-110 ease-in-out  duration-300'>
                     <SiDiscord />
                 </div>
-            {/* </a> */}
+            </a>
             <a href="https://etherscan.io/address/0x9b399a856b0016cf91c60aaae195b33738874c2b" target="_blank" rel="noopener noreferrer">
                 <div className='flex p-1 flex-col items-center justify-center text-white transition  border hover:shadow-[#E1B649] border-white rounded-lg hover:shadow duration-300 ease-in-out  bg-primary hover:scale-110'>
                     <Image src='/etherscan-logo.webp' alt='etherscan' width={24} height={24} />

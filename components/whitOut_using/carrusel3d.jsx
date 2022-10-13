@@ -59,7 +59,7 @@ export default class Example extends Component {
           showNavigation={this.state.showNavigation}
           animationConfig={this.state.config}
         />
-        <div className='z-10 flex flex-row justify-between w-full'>
+        <div className='z-20 flex flex-row justify-between w-full'>
                     {/* Button left */}
                     <div className="z-50 -ml-20 text-3xl transition duration-300 ease-in-out cursor-pointer  hover:scale-150  hover:text-[#E1B649]"
                         onClick={() => {

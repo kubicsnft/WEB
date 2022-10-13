@@ -59,9 +59,10 @@ export default function Whitelist() {
         setIsWhitelisted(true)
       } catch (err) {
         setLoading(false)
-
-        if (err.code != 4001) {
-          if (err.error.data.originalError.data == 0x57657b77) {
+        console.log('New ERROR: ' + err)
+        console.log('New ERROR: ' + err.code)
+        if (err.code != 4001 && err.code != 'ACTION_REJECTED') {
+          if (err.error.data.originalError.data === 0x57657b77) {
             Swal.fire({
               position: 'center',
               icon: 'warning',
@@ -72,7 +73,7 @@ export default function Whitelist() {
             })
             setIsWhitelisted(true)
           }
-          if (err.error.data.originalError.data == 0xfa6ef231) {
+          if (err.error.data.originalError.data === 0xfa6ef231) {
             Swal.fire({
               position: 'center',
               icon: 'warning',
@@ -82,8 +83,7 @@ export default function Whitelist() {
               timer: 2500
             })
           }
-          if (err.error.data.originalError.data == 0xf236ce7a) {
-
+          if (err.error.data.originalError.data === 0xf236ce7a) {
             Swal.fire({
               position: 'center',
               icon: 'warning',
@@ -94,7 +94,7 @@ export default function Whitelist() {
             })
           }
         } else {
-          console.log(err)
+          console.log('4001' + err)
         }
       }
     } else {
@@ -122,34 +122,36 @@ export default function Whitelist() {
       )
     else {
       return (
-        <div className="flex flex-col items-center bg-[#ffffff8a] p-5 border rounded-lg shadow-lg sm:w-[30rem]">
+        <div className="flex flex-col items-center  sm:w-[30rem]">
           <div>
             <FormattedMessage
               id='wl.connected'
               defaultMessage='Connected! Make sure you are on the ETH Chain'
             />
           </div>
-          <button className="mt-4 button learn-more" onClick={() => addToWhitelist()}>
-            <span className="circle" aria-hidden="true">
-              <span className="icon arrow"></span>
-            </span>
-            <span className="button-text" translate="no">
-              <FormattedMessage
-                id='wl.join'
-                defaultMessage='JOIN OUR WHITELIST'
-              />
-            </span>
-          </button>
+          <div className="w-64">
+            <button className="w-32 mt-4 shadow-lg button learn-more" onClick={() => addToWhitelist()}>
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text" translate="no">
+                <FormattedMessage
+                  id='wl.join'
+                  defaultMessage='JOIN OUR WHITELIST'
+                />
+              </span>
+            </button>
+          </div>
         </div>
       )
     }
   }
   // ========================================================
   return (
-    <div className="flex">
+    <div className="flex text-primary">
       {hasMetamask ? (
         isConnected ? ("") : (
-          <div className="flex flex-col bg-[#ffffff8a] text-center items-center justify-center p-5 rounded-lg shadow-xl sm:w-[30rem] ">
+          <div className="flex flex-col bg-[#ffffff8a] items-center justify-center p-5 rounded-lg shadow-xl sm:w-[30rem] ">
             <div className="mb-4">
               <FormattedMessage
                 id='wl.metamask'
@@ -157,7 +159,6 @@ export default function Whitelist() {
               />
             </div>
             <div className="flex flex-row items-center justify-center w-full">
-
               <button
                 className=' buttMeta'
                 type="button"
@@ -180,12 +181,15 @@ export default function Whitelist() {
             </div>
           </div>
         )
+
       ) : (
+
         <div className="flex flex-col bg-[#ffffff8a] items-center justify-center p-5 rounded-lg shadow-xl sm:w-[30rem] ">
-          <FormattedMessage
-            id='wl.instalMetamask'
-            defaultMessage='¡Instale Metamask para unirse a nuestra whitelist!'
-          />
+          <p>
+            <FormattedMessage id="wl.metamask.install1" defaultMessage=''/>
+            <a className="hover:text-[#E1B649] underline" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn">Metamask</a>
+            <FormattedMessage id="wl.metamask.install2" defaultMessage=''/>
+          </p>
         </div>
       )}
       <div>

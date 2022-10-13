@@ -91,7 +91,7 @@ a {
  }
  
  .button.learn-more {
-  width: 15rem;
+  width: 100%;
   height: auto;
  }
  
@@ -149,7 +149,7 @@ a {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
  }
  
  .button:hover .circle {
@@ -457,7 +457,7 @@ a {
   100% { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-/*----------------------------- Film Border  ------------------------------*/
+/* Film Border  */
 
 @media only screen and (min-width: 640px) {
 .bord {

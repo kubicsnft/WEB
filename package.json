@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "3d-react-carousal": "^5.0.0",
+    "@babel/core": "^7.19.3",
+    "@vercel/edge": "^0.0.4",
     "axios": "^0.27.2",
     "ethers": "^5.7.1",
+    "jquery": "^3.6.1",
     "next": "12.2.3",
     "pure-react-carousel": "^1.29.0",
     "radium": "^0.26.2",

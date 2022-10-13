@@ -8,10 +8,16 @@ import Image from "next/image";
 import { MdOutlineArrowBackIosNew } from 'react-icons/md'
 import { MdOutlineArrowForwardIos } from 'react-icons/md'
 import { FormattedMessage } from "react-intl";
-
+// Images
+import futuro from '../../public/cubos/elFuturo.png'
+import dk from '../../public/cubos/dragonkeeper.png'
+import mancha from '../../public/cubos/laMancha.png'
+import caramelo from '../../public/cubos/carameloW.png'
 
 
 export default function Slider(props) {
+
+    const [goToSlide, setstateGoToSlide] = useState(0);
 
     const [state, setState] = useState({
         goToSlide: 0,
@@ -21,11 +27,11 @@ export default function Slider(props) {
 
     });
 
+    // Read More button -------------------------
     const [desplegar, setDesplegar] = useState({
         desplegar: 'hidden',
         mas: 'inline cursor-pointer text-secondary'
     });
-
     const changueText = () => {
         (desplegar.mas === 'inline cursor-pointer text-secondary')
             ?
@@ -39,21 +45,21 @@ export default function Slider(props) {
                 mas: 'inline cursor-pointer text-secondary'
             })
     }
-
+    // --------------------------------------------
 
     const slides = [
         {
             key: uuidv4(),
             content:
                 <div className="flex flex-col items-center p-2 bg-white w-72 sm:w-96 ">
-                    {/* <Link href='/dragonKeeper'> */}
-                    <Image
-                        className="flex transition duration-300 ease-in-out cursor-pointer hover:-translate-y-2 hover:scale-105"
-                        src='/cubos/Cubo_DK.png'
-                        alt='dragon Keeper'
-                        width={250}
-                        height={250} />
-                    {/* </Link> */}
+                    <Link href='/dragonKeeper'>
+                        <Image
+                            className="flex transition duration-300 ease-in-out cursor-pointer hover:scale-105"
+                            src={dk}
+                            alt='dragon Keeper'
+                            height={300}
+                        />
+                    </Link>
                     <h3 className="text-xl tracking-widest text-center text-secondary text-shadow">DRAGONKEEPER</h3>
                     <div className='p-2 text-sm text-justify text-white rounded-lg shadow-lg w-5/5 shadow-gray-400 bg-primary '>
                         <FormattedMessage
@@ -70,11 +76,11 @@ export default function Slider(props) {
                 <div className="flex flex-col items-center bg-white rounded-lg w-72 sm:w-96 ">
                     {/* <Link href=''> */}
                     <Image
-                        className="flex transition duration-300 ease-in-out cursor-pointer hover:-translate-y-2 hover:scale-105"
-                        src='/cubos/Cubo_FUT.png'
-                        alt='dragon Keeper'
-                        width={250}
-                        height={250} />
+                        className="flex transition duration-300 ease-in-out cursor-pointe over:scale-105"
+                        src={futuro}
+                        alt='El fututo ya está aquí'
+                        height={300}
+                    />
                     {/* </Link> */}
                     <h3 className="text-xl tracking-widest text-center text-secondary">
                         <FormattedMessage
@@ -91,73 +97,115 @@ export default function Slider(props) {
                             <FormattedMessage
                                 id="project.futuro2"
                                 default=''
-                            />
-                            <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">
-                                <FormattedMessage
-                                    id="readLess"
-                                    default=''
-                                />
-                            </div>
+                            />                            <div onClick={changueText} id="menos" className="cursor-pointer text-secondary">... [leer menos]</div>
                         </span>
-                        <div onClick={changueText} className={desplegar.mas}>
-                            <FormattedMessage
-                                id="readMore"
-                                default=''
-                            />
-                        </div>
+                        <div onClick={changueText} className={desplegar.mas}>... [leer más]</div>
                     </div>
-                </div>
-        },
-        {
-            key: uuidv4(),
-            content:
-
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg h-80 w-72 sm:w-96">
-                    <Cube3d />
-                    <h3 className="absolute mb-16 ml-8 text-2xl tracking-widest text-center -rotate-12 text-secondary may">COMING SOON...</h3>
+                    <h3 className="absolute  bg-[#7094b16e] rounded-lg mb-44  text-2xl tracking-widest text-center -rotate-12 p-4 text-white may">
+                        <FormattedMessage
+                            id="coming.soon"
+                            default='COMING SOON'
+                        />
+                    </h3>
                 </div>
 
         },
         {
             key: uuidv4(),
             content:
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg h-80 w-72 sm:w-96">
-                    <Cube3d />
-                    <h3 className="absolute mb-16 ml-8 text-2xl tracking-widest text-center -rotate-12 text-secondary may">COMING SOON...</h3>
+
+                <div className="flex flex-col items-center bg-white rounded-lg w-72 sm:w-96">
+                    <Image
+                        className="flex transition duration-300 ease-in-out cursor-pointe over:scale-105"
+                        src={caramelo}
+                        alt='Caramelo world'
+                        height={300}
+                    />
+                    <h3 className="text-xl tracking-widest text-center text-secondary text-shadow may">
+                    <FormattedMessage
+                            id="project.caramelo.tittle"
+                            default='Palabras de caramelo'
+                        />
+                    </h3>
+                    <div className='p-2 text-sm text-justify text-white rounded-lg shadow-lg w-5/5 shadow-gray-400 bg-primary '>
+                        <FormattedMessage
+                            id="project.caramelo"
+                            default='Película de animación CG basada en la obra universal de Cervantes. En Desarrollo.'
+                        />
+                    </div>
+                    <h3 className="absolute  bg-[#7094b16e] rounded-lg mb-44  text-2xl tracking-widest text-center -rotate-12 p-4 text-white may"><FormattedMessage
+                        id="coming.soon"
+                        default='COMING SOON'
+                    />
+                    </h3>
                 </div>
+
+        },
+        {
+            key: uuidv4(),
+            content:
+                <div className="flex flex-col items-center bg-white rounded-lg w-72 sm:w-96">
+                    <Image
+                        className="flex transition duration-300 ease-in-out cursor-pointe over:scale-105"
+                        src={mancha}
+                        alt='En un lugar de la Mancha'
+                        height={300}
+                    />
+                    <h3 className="text-xl tracking-widest text-center text-secondary text-shadow may">
+                    <FormattedMessage
+                            id="project.mancha.tittle"
+                            default='En un lugar de la Mancha'
+                        />
+                    </h3>
+                    <div className='p-2 text-sm text-justify text-white rounded-lg shadow-lg w-5/5 shadow-gray-400 bg-primary '>
+                        <FormattedMessage
+                            id="project.mancha"
+                            default='Película de animación CG basada en la obra universal de Cervantes. En Desarrollo.'
+                        />
+                    </div>
+                    <h3 className="absolute  bg-[#7094b16e] rounded-lg mb-44  text-2xl tracking-widest text-center -rotate-12 p-4 text-white may"><FormattedMessage
+                        id="coming.soon"
+                        default='COMING SOON'
+                    />
+                    </h3>
+                </div>
+
         },
     ]
 
 
 
     return (
-        <div className="flex flex-col items-center justify-start w-11/12 h-full xl:w-full ">
-            <div style={{ width: "90%", height: "450px", margin: "0 auto" }} className=''>
+        <div className="flex items-center justify-center w-11/12 h-full pb-8 xl:w-full">
+            <div style={{ width: "90%", margin: "0 auto" }} className='flex-col items-center sm:h-[480px] h-[350px]'>
                 <Carousel
                     slides={slides}
-                    goToSlide={state.goToSlide}
+                    goToSlide={goToSlide}
                     offsetRadius={state.offsetRadius}
                     showNavigation={state.showNavigation}
                     animationConfig={state.config}
                 />
-                {/* ------ buttons --------- */}
-            <div className='flex flex-row justify-center w-full text-secondary'>
-                {/* Button left */}
-                <div className="mr-10 text-3xl transition duration-300 ease-in-out cursor-pointer hover:scale-150"
-                    onClick={() => {
-                        setState({ goToSlide: state.goToSlide - 1 });
-                    }}>
-                    <MdOutlineArrowBackIosNew />
-                </div>
-                {/* button right */}
-                <div className="ml-10 text-3xl transition duration-300 ease-in-out cursor-pointer hover:scale-150"
-                    onClick={() => {
-                        setState({ goToSlide: state.goToSlide + 1 });
-                    }}>
-                    <MdOutlineArrowForwardIos />
+                {/*-------- Buttoms ------- */}
+                <div className='flex flex-row justify-center w-full mt-12 sm:mt-10 md:mt-4 text-secondary'>
+                    {/* Button left */}
+                    <div className="p-1 mr-10 text-3xl transition duration-300 ease-in-out rounded-full shadow-lg cursor-pointer hover:scale-125"
+                        onClick={() => {
+                            setstateGoToSlide(goToSlide - 1);
+                        }}>
+                        <MdOutlineArrowBackIosNew />
+                    </div>
+
+                    {/* button right */}
+                    <div className="p-1 ml-10 text-3xl transition duration-300 ease-in-out rounded-full shadow-lg cursor-pointer hover:scale-125"
+                        onClick={() => {
+                            setstateGoToSlide(goToSlide + 1);
+                        }}>
+                        <MdOutlineArrowForwardIos />
+                    </div>
                 </div>
             </div>
-            </div>
+
+
         </div>
     );
 }

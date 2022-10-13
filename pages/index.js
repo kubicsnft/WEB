@@ -7,20 +7,19 @@ import Nosotros from '../components/home/nosotros'
 import WhayIsKubics from '../components/home/whayIsKubics'
 import MenuMovil from "../components/MenuMovil";
 import { FormattedMessage } from "react-intl";
-import TestRoadmap from "../components/test_Roadmap";
+import Roadmap from "../components/home/roadmap";
 import CookieConsent from "react-cookie-consent";
 
 
 
 
-//   Importación dinamica de carrusel3d.
+// Importación dinamica de carrusel3d
 const CarruselPro = dynamic(() => import('../components/carrusel3d/carruselPro'), { ssr: false })
-const Carrusel1 = dynamic(() => import('../components/carrusel3d/carousel'), { ssr: false })
+const Carrusel1 = dynamic(() => import('../components/carrusel3d/carouselProMobile'), { ssr: false })
 
 const style = {
   section: 'w-full  sm:px-4 md:px-6 xl:px-10  border-b flex flex-col items-center  text-center bord bg-[#ffffffe8]  pb-8 min-h-[45em]     max-w-screen-2xl    z-10',
   titulo: 'text-shadow mt-4 mb-6 text-2xl sm:text-3xl pt-14 sm-p-3 text-primary may',
-  // separador: 'h-2  w-full bg-primary border-primary ',
 }
 
 export default function Home() {
@@ -67,16 +66,15 @@ export default function Home() {
                   />
                 </h2>
               </div>
-              <div className='items-center justify-center hidden w-full h-full p-2 sm:flex'>
+              {/* <div className='items-center justify-center hidden w-full h-full p-2 sm:flex'> */}
                 <CarruselPro />
-              </div>
+              {/* </div>
               <div className="flex items-center justify-center w-full h-full p-2 sm:hidden ">
                 <Carrusel1 />
-              </div>
+              </div> */}
             </div>
             {/*================= Section 3: ================= */}
             <div className={style.section}>
-
               <h2 id='nosotros' className={style.titulo}>
                 <FormattedMessage
                   id='home.title3'
@@ -87,10 +85,8 @@ export default function Home() {
             </div>
             {/*================= Section 4: ===================*/}
             <div className={style.section}>
-
               <h2 id='roadmap' className={style.titulo}>ROADMAP</h2>
-              {/* <Roadmap /> */}
-              <TestRoadmap />
+              <Roadmap />
             </div>
           </div>
         </div>
