@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import logo from '../../public/logo_loop_SO.gif'
+import logo from '../../public/logos/logo_loop_SO.gif'
 import Newsletters from '../Newsletter';
 import SocialNetworks from '../SocialNetworksFooter';
 
@@ -29,7 +29,7 @@ const Footer = () => {
                         <Image src={logo} width={144} height={130} alt="logo" />
                     </div>
                     <div className='flex flex-col items-center self-center justify-center h-full justify-self-center'>
-                        <div className='flex flex-col items-center p-8 px-16 rounded-lg shadow-lg'>
+                        <div className='flex flex-col items-center p-8 rounded-lg shadow-lg sm:px-16'>
                             <div className='mb-2 text-lg'>info@kubics.com</div>
                             <SocialNetworks color='bg-white' text='text-primary' />
                         </div>

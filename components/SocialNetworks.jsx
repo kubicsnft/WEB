@@ -29,11 +29,11 @@ const SocialNetworks = (props) => {
                         <AiOutlineTwitter />
                     </div>
                 </a>
-                {/* <a href="https://www.instagram.com/kubicsnft/"> */}
+                <a href="http://discord.gg/WpYwyCgNmu">
                     <div className={`${color} ${text} ${style.icono} `} >
                         <SiDiscord />
                     </div>
-                {/* </a> */}
+                </a>
                 <a href="https://www.instagram.com/kubics_nft/">
                     <div className={`${color} ${text} ${style.icono}`} >
                         <AiFillInstagram />
