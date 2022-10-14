@@ -57,7 +57,7 @@ const NFTZone = () => {
                     />
                     <div className='flex flex-row justify-between w-full p-2 txt-[#5d5d5d]'>
                         <div className=" text-start">
-                            <h3 className="font-bold ">Dragonkeeper Rare </h3>
+                            <h3 className="font-bold ">Dragonkeeper Ultra Rare </h3>
                         </div>
                         <div className=' text-start'>
                             <p>Price</p>
@@ -217,7 +217,7 @@ const NFTZone = () => {
                     />
                     <div className='flex flex-row justify-between w-full p-2 txt-[#5d5d5d]'>
                         <div className=" text-start">
-                            <h3 className="font-bold ">Dragonkeeper Rare </h3>
+                            <h3 className="font-bold ">Dragonkeeper Uncommon </h3>
                         </div>
                         <div className=' text-start'>
                             <p>Price</p>
