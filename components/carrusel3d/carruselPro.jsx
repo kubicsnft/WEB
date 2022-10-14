@@ -60,7 +60,7 @@ export default function Slider(props) {
                             height={300}
                         />
                     </Link>
-                    <h3 className="text-xl tracking-widest text-center text-secondary text-shadow">DRAGONKEEPER</h3>
+                    <h3 className="text-lg tracking-widest text-center text-secondary text-shadow may">DRAGONKEEPER</h3>
                     <div className='p-2 text-sm text-justify text-white rounded-lg shadow-lg w-5/5 shadow-gray-400 bg-primary '>
                         <FormattedMessage
                             id="project.dragon"
@@ -82,7 +82,7 @@ export default function Slider(props) {
                         height={300}
                     />
                     {/* </Link> */}
-                    <h3 className="text-xl tracking-widest text-center text-secondary">
+                    <h3 className="text-lg tracking-widest text-center text-secondary may">
                         <FormattedMessage
                             id="project.title.futuro"
                             default=''
@@ -121,7 +121,7 @@ export default function Slider(props) {
                         alt='Caramelo world'
                         height={300}
                     />
-                    <h3 className="text-xl tracking-widest text-center text-secondary text-shadow may">
+                    <h3 className="text-lg tracking-widest text-center text-secondary text-shadow may">
                     <FormattedMessage
                             id="project.caramelo.tittle"
                             default='Palabras de caramelo'
@@ -151,7 +151,7 @@ export default function Slider(props) {
                         alt='En un lugar de la Mancha'
                         height={300}
                     />
-                    <h3 className="text-xl tracking-widest text-center text-secondary text-shadow may">
+                    <h3 className="text-lg tracking-widest text-center text-secondary text-shadow may">
                     <FormattedMessage
                             id="project.mancha.tittle"
                             default='En un lugar de la Mancha'

@@ -10,7 +10,7 @@ import { FormattedMessage } from 'react-intl';
 // Import dynamic
 const Carrusel = dynamic(() => import('../carrusel3d/carrusel'), { ssr: false })
 
-// Import image
+// ------------------------- Import image -------------------------
 import legend0 from '../../public/dragonkeeper/nft_legenday/0.webp'
 import legend1 from '../../public/dragonkeeper/nft_legenday/1.webp'
 import legend2 from '../../public/dragonkeeper/nft_legenday/2.webp'
@@ -70,7 +70,7 @@ const SoldNft = (id) => {
     return sold
 }
 
-
+// Syiles Tailwind 
 const style = {
     container: 'flex-col mt-8 items-center w-full justify-center   sm:mb-16',
     category_box: ' border rounded-md cursor-pointer shadow-lg mr-2 text-sm w-20 '
@@ -88,8 +88,8 @@ function Carousel(props) {
                 id='0'
                 image={legend0}
                 title='Dragonkeeper Legendary 0'
-                description="DragonKeeper collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('0')}
             />
         },
@@ -99,8 +99,8 @@ function Carousel(props) {
                 id='1'
                 image={legend1}
                 title='Dragonkeeper Legendary 1'
-                description="DragonKeeper collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('1')}
             />
         },
@@ -110,8 +110,8 @@ function Carousel(props) {
                 id='2'
                 image={legend2}
                 title='Dragonkeeper Legendary 2'
-                description="DragonKeeper collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('2')}
             />
         },
@@ -121,8 +121,8 @@ function Carousel(props) {
                 id='3'
                 image={legend3}
                 title='Dragonkeeper Legendary 3'
-                description="DragonKeeper collection"
-                price='0.1'
+                // // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('3')}
             />
         },
@@ -132,8 +132,8 @@ function Carousel(props) {
                 id='4'
                 image={legend4}
                 title='Dragonkeeper Legendary 4'
-                description="DragonKeeper collection"
-                price='0.1'
+                // // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('4')}
             />
         },
@@ -143,8 +143,8 @@ function Carousel(props) {
                 id='5'
                 image={legend5}
                 title='Dragonkeeper Legendary 5'
-                description="DragonKeeper collection"
-                price='0.1'
+                // // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('5')}
             />
         },
@@ -154,8 +154,8 @@ function Carousel(props) {
                 id='6'
                 image={legend6}
                 title='Dragonkeeper Legendary 6'
-                description="DragonKeeper collection"
-                price='0.1'
+                // // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('6')}
             />
         },
@@ -165,8 +165,8 @@ function Carousel(props) {
                 id='7'
                 image={legend7}
                 title='Dragonkeeper Legendary 7'
-                description="DragonKeeper collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('7')}
             />
         }]
@@ -177,8 +177,8 @@ function Carousel(props) {
                 id='8'
                 image={legend8}
                 title='NFT Dragonkeeper Legendary 8'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('8')}
             />
 
@@ -189,8 +189,8 @@ function Carousel(props) {
                 id='9'
                 image={legend9}
                 title='NFT Dragonkeeper Legendary 9'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('9')}
             />
         },
@@ -200,8 +200,8 @@ function Carousel(props) {
                 id='10'
                 image={legend10}
                 title='NFT Dragonkeeper Legendary 10'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('10')}
             />
         },
@@ -211,8 +211,8 @@ function Carousel(props) {
                 id='11'
                 image={legend11}
                 title='NFT Dragonkeeper Legendary 11'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('11')}
             />
         },
@@ -222,8 +222,8 @@ function Carousel(props) {
                 id='12'
                 image={legend12}
                 title='NFT Dragonkeeper Legendary 12'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('12')}
             />
         },
@@ -233,8 +233,8 @@ function Carousel(props) {
                 id='13'
                 image={legend13}
                 title='NFT Dragonkeeper Legendary 13'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('13')}
             />
         },
@@ -244,8 +244,8 @@ function Carousel(props) {
                 id='14'
                 image={legend14}
                 title='NFT Dragonkeeper Legendary 14'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('14')}
             />
         },
@@ -255,8 +255,8 @@ function Carousel(props) {
                 id='15'
                 image={legend15}
                 title='NFT Dragonkeeper Legendary 15'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('15')}
             />
         }]
@@ -267,8 +267,8 @@ function Carousel(props) {
                 id='16'
                 image={legend16}
                 title='NFT Dragonkeeper Legendary 16'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('16')}
             />
 
@@ -279,8 +279,8 @@ function Carousel(props) {
                 id='17'
                 image={legend17}
                 title='NFT Dragonkeeper Legendary 17'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('17')}
             />
         },
@@ -290,8 +290,8 @@ function Carousel(props) {
                 id='18'
                 image={legend18}
                 title='NFT Dragonkeeper Legendary 18'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('18')}
             />
         },
@@ -301,8 +301,8 @@ function Carousel(props) {
                 id='19'
                 image={legend19}
                 title='NFT Dragonkeeper Legendary 19'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('19')}
             />
         },
@@ -312,8 +312,8 @@ function Carousel(props) {
                 id='20'
                 image={legend20}
                 title='NFT Dragonkeeper Legendary 20'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('20')}
             />
         },
@@ -323,8 +323,8 @@ function Carousel(props) {
                 id='21'
                 image={legend21}
                 title='NFT Dragonkeeper Legendary 21'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('21')}
             />
         },
@@ -334,8 +334,8 @@ function Carousel(props) {
                 id='22'
                 image={legend22}
                 title='NFT Dragonkeeper Legendary 22'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('22')}
             />
         },
@@ -345,8 +345,8 @@ function Carousel(props) {
                 id='23'
                 image={legend23}
                 title='NFT Dragonkeeper Legendary 23'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('23')}
             />
         }]
@@ -357,8 +357,8 @@ function Carousel(props) {
                 id='32'
                 image={legend32}
                 title='NFT Dragonkeeper Legendary 32'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('32')}
             />
 
@@ -369,8 +369,8 @@ function Carousel(props) {
                 id='33'
                 image={legend33}
                 title='NFT Dragonkeeper Legendary 33'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('33')}
             />
         },
@@ -380,8 +380,8 @@ function Carousel(props) {
                 id='34'
                 image={legend34}
                 title='NFT Dragonkeeper Legendary 34'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('34')}
             />
         },
@@ -391,8 +391,8 @@ function Carousel(props) {
                 id='35'
                 image={legend35}
                 title='NFT Dragonkeeper Legendary 35'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('35')}
             />
         },
@@ -402,8 +402,8 @@ function Carousel(props) {
                 id='36'
                 image={legend36}
                 title='NFT Dragonkeeper Legendary 36'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('36')}
             />
         },
@@ -413,8 +413,8 @@ function Carousel(props) {
                 id='37'
                 image={legend37}
                 title='NFT Dragonkeeper Legendary 37'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('37')}
             />
         },
@@ -424,8 +424,8 @@ function Carousel(props) {
                 id='38'
                 image={legend38}
                 title='NFT Dragonkeeper Legendary 38'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('38')}
             />
         },
@@ -435,8 +435,8 @@ function Carousel(props) {
                 id='39'
                 image={legend39}
                 title='NFT Dragonkeeper Legendary 39'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('39')}
             />
         }]
@@ -447,8 +447,8 @@ function Carousel(props) {
                 id='24'
                 image={legend24}
                 title='NFT Dragonkeeper Legendary 24'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('24')}
             />
 
@@ -459,8 +459,8 @@ function Carousel(props) {
                 id='25'
                 image={legend25}
                 title='NFT Dragonkeeper Legendary 25'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('25')}
             />
         },
@@ -470,8 +470,8 @@ function Carousel(props) {
                 id='26'
                 image={legend26}
                 title='NFT Dragonkeeper Legendary 26'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('26')}
             />
         },
@@ -481,8 +481,8 @@ function Carousel(props) {
                 id='27'
                 image={legend27}
                 title='NFT Dragonkeeper Legendary 27'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('27')}
             />
         },
@@ -492,8 +492,8 @@ function Carousel(props) {
                 id='28'
                 image={legend28}
                 title='NFT Dragonkeeper Legendary 28'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('28')}
             />
         },
@@ -503,8 +503,8 @@ function Carousel(props) {
                 id='29'
                 image={legend29}
                 title='NFT Dragonkeeper Legendary 29'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('29')}
             />
         },
@@ -514,8 +514,8 @@ function Carousel(props) {
                 id='30'
                 image={legend30}
                 title='NFT Dragonkeeper Legendary 30'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('30')}
             />
         },
@@ -525,8 +525,8 @@ function Carousel(props) {
                 id='31'
                 image={legend31}
                 title='NFT Dragonkeeper Legendary 31'
-                description="DragonKeeper NFT collection"
-                price='0.1'
+                // connectFunction = {connectFunction}
+                // connected={connected}
                 sold={SoldNft('31')}
             />
         }]
