@@ -588,7 +588,7 @@ function Carousel(props) {
                         className={`${style.category_box}${categoryButton === 'gold' ? " font-bold border-secondary shadow-lg shadow-[#7B94b1] transition  scale-105" : ""}`}
                         onClick={changueA}
                     >
-                        Bold
+                        Gold
                     </div>
                     <div
                         className={`${style.category_box}${categoryButton === 'bronce' ? " font-bold border-secondary shadow-lg shadow-[#7B94b1] transition  scale-105" : ""}`}
@@ -600,7 +600,7 @@ function Carousel(props) {
                         className={`${style.category_box}${categoryButton === 'silver' ? " font-bold border-secondary shadow-lg shadow-[#7B94b1] transition  scale-105" : ""}`}
                         onClick={changueC}
                     >
-                        Silver
+                        Platinum
                     </div>
                     <div
                         className={`${style.category_box}${categoryButton === 'marble' ? "font-bold border-secondary shadow-lg  shadow-[#7B94b1] transition  scale-105" : ""}`}
